@@ -1,0 +1,108 @@
+/*Responsive Design means your website automatically adjusts for:
+
+  Desktop
+
+  Mobile
+
+  Tablet
+
+This is done using Media Queries + Flexible Layout (Flexbox/Grid).
+
+Flexible Layout	display:flex
+Adjust Direction	flex-direction
+Responsive Image	width:100%
+Tablet Layout	@media (max-width:900px)
+Mobile Layout	@media (max-width:600px)
+Menu Collapse	Column Navigation
+Auto Resizing	height:auto
+*/
+ 
+/* Make all elements size properly */
+* {
+    box-sizing: border-box;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+
+/* Container holds cards using flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Each card size for desktop */
+.card {
+    width: 300px;
+}
+
+ 
+
+@media (max-width: 992px) {
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 45%;   /* 2 cards per row */
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+ 
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;   /* 1 card per row */
+        margin-bottom: 15px;
+    }
+
+    /* Make inputs full width */
+    input {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    /* Stack inline demos */
+    .inline-demo span,
+    .inline-block-demo span {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+ 

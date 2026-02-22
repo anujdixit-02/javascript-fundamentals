@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html  >
+<head>
+     
+    <title>Document</title>
+</head>
+<body>
+    <!-- table tag  -->
+     <!-- thead(creating heading), tbody(creating body), tfoot, tr, td(create cell)   -->
+
+     <table border="1">
+         <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+         </thead>
+         <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Anuj</td>
+                <td>male </td>
+                 <td>20</td>
+                  <!-- rowspan is use to extand the element row-wise   -->
+                   <!-- colspan is use to extand the element column-wise -->
+            </tr>
+            <tr>
+                <td>1235</td>
+                <td>Tanay</td>
+                <td>male</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>1236</td>
+                <td>Arsala</td>
+                <td>Female</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>1237</td>
+                <td>Avni</td>
+                <td>Female</td>
+                <td>20</td>
+            </tr>
+         </tbody>
+     </table>
+
+
+     <br>
+     <br>
+
+      <table border="2">
+        <tr>
+            <td>Column1</td>
+            <td>Column2</td>
+            <td>Column3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+             
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+            <td colspan="3"> Row 3 cell 1</td>
+ 
+        </tr>
+      </table>
+
+      <br>
+      <br>
+
+      <table border="2">
+        <thead>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Anuj</td>
+                    <td>Founder MMT</td>
+                    <td>1,00,000$</td>
+                    <td rowspan="4">Company Founder</td>
+                </tr>
+                 
+                <tr><td>2</td>
+                    <td>Shruti</td>
+                    <td>Founder KKC</td>
+                    <td>1,00,555$</td></tr>
+
+                    <tr><td>3</td>
+                    <td>Avni</td>
+                    <td>Founder YT</td>
+                    <td>5,00,000$</td></tr>
+
+                    <tr><td>4</td>
+                    <td>Mamta</td>
+                    <td>Founder HIH</td>
+                    <td>2,00,000$</td></tr>
+
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Toyal Expense</td>
+                        <td>9,00,555$</td>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </thead>
+      </table>
+
+      <br>
+      <br>
+      <table border="2">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Other</th>
+        </thead>
+         <tbody>
+            <tr>
+                <td rowspan="8"> 1 </td>
+                <td rowspan="4" >kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>New Street</td>
+                <td>288</td>
+                <td>300</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivandrum</td>
+                <td>Guru Street</td>
+                <td>600</td>
+                <td>700</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>200</td>
+                <td>100</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharastra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>KR Street</td>
+                <td>1000</td>
+                <td>800</td>
+                <td>5</td>
+            </tr>
+            <tr>
+               <td>Main Street</td>
+                <td>2000</td>
+                <td>200</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>600</td>
+                <td>300</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Krishnav Street</td>
+                <td>278</td>
+                <td>666</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">AKA Central</td>
+                <td>Billi Street</td>
+                <td>1000</td>
+                <td>878</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Cross Street</td>
+                <td>5000</td>
+                <td>700</td>
+                <td>767</td>
+            </tr>
+         </tbody>
+      </table>
+      <br>
+      

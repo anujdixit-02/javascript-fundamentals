@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+      <p>Rock Paper Scissors</p>
+    <!--write javascript code to make the rock button working --> 
+  <button onclick="
+   /*To choose the random numbers js have the math.random() tool*/
+   const computerMove = pickComputerMove();
+    
+
+   let result ='';
+  /*compare the result and add them in the (result variable) by ===*/
+   if(computerMove === 'Rock'){
+    result = 'Tie.';
+   } else if (computerMove === 'Paper'){
+    result = 'You Lose. ';
+   } else if (computerMove === 'Scissors'){
+    result = 'You wins!!';
+   }
+
+
+  /*print result by ${}*/
+   alert(`You Picked Rock . Computer Picked
+   n${computerMove}.
+    \n ${result}   `);
+  ">Rock</button>
+
+  <!--Repeat the process --> 
+  <button onclick=" 
+   const computerMove1 = pickComputerMove1(); 
+
+   let result1 ='';
+
+   if(computerMove1 === 'Rock'){
+    result1 = 'You wins!!';
+   } else if (computerMove1 === 'Paper'){
+    result1 = 'Tie. ';
+   } else if (computerMove1 === 'Scissors'){
+    result1 = 'You Lose';
+   }
+
+
+
+   alert(`You Picked Paper . Computer Picked
+   \n${computerMove1}.
+   \n ${result1}   `); 
+    
+   
+  ">Paper</button>
+
+  <button onclick="
+
+   const computerMove2 = pickComputerMove2();
+  
+   let result2 ='';
+
+   if(computerMove2 === 'Rock'){
+    result2 = 'You Lose.';
+   } else if (computerMove2 === 'Paper'){
+    result2 = 'You Wins!. ';
+   } else if (computerMove2 === 'Scissors'){
+    result2 = 'tie.';
+   }
+
+
+
+   alert(`You Picked Scissors. Computer Picked
+   \n${computerMove2}.
+   \n ${result2}   `);
+
+ 
+    
+    
+  ">Scissors</button>
+    
+    <script>
+
+      /*function function1(){
+        console.log('hello');
+        console.log(2+2);
+        return 5;
+      }
+      
+      function1();
+      function1(); */
+
+      function pickComputerMove() {
+         const randomNumber = Math.random();
+   /*computerMove and divide them into three part from 0 to 1{0 to 1/3, 1/3 to 2/3 and 2/3 to 1}*/
+   let computerMove = '';
+
+   if(randomNumber>=0 && randomNumber< 1/3){
+     computerMove = 'Rock';
+   }  else if(randomNumber>=1/3 && randomNumber< 2/3){
+     computerMove = 'Paper' ;
+   }  else if(randomNumber>=2/3 && randomNumber< 1){
+     computerMove = 'Scissors'; 
+   }
+
+   return computerMove;
+      }
+
+
+
+      function pickComputerMove1 (){
+
+        const randomNumber1 = Math.random();
+
+   let computerMove1 = '';
+
+   if(randomNumber1>=0 && randomNumber1< 1/3){
+     computerMove1 = 'Rock';
+   }  else if(randomNumber1>=1/3 && randomNumber1< 2/3){
+     computerMove1 = 'Paper' ;
+   }  else if(randomNumber1>=2/3 && randomNumber1< 1){
+     computerMove1 = 'Scissors'; 
+   }
+
+   return computerMove1;
+      }
+ 
+      function pickComputerMove2(){
+          const randomNumber2 = Math.random();
+
+   let computerMove2 = '';
+
+   if(randomNumber2>=0 && randomNumber2< 1/3){
+     computerMove2 = 'Rock';
+   }  else if(randomNumber2>=1/3 && randomNumber2< 2/3){
+     computerMove2 = 'Paper' ;
+   }  else if(randomNumber2>=2/3 && randomNumber2< 1){
+     computerMove2 = 'Scissors'; 
+   }
+        return computerMove2;
+      }
+      
+    </script>
+  </body>
+</html>

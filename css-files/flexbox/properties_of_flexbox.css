@@ -1,0 +1,51 @@
+ 
+.container{
+    display:flex;    /*if we write flex all div come in single column*/           
+    flex-direction:row;        
+    flex-wrap:wrap;           
+    justify-content:center;    
+    align-items:stretch;       
+    gap:25px;                   
+}
+
+
+/* Control individual card behaviour */
+.card{
+    flex:1 1 250px;  /* Grow | Shrink | Base width */
+}
+
+
+/* Example of different alignment */
+.card:nth-child(2){
+    align-self:flex-start;   /* Override alignment */
+}
+
+.card:nth-child(3){
+    align-self:flex-end;
+}
+
+
+/* Change direction when needed (for testing)
+   Uncomment to see vertical layout */
+
+/*
+.container{
+    flex-direction:column;
+}
+*/
+
+
+/* Control order   */
+.card:nth-child(4){
+    order:-1;  /* move to first */
+}
+
+
+/* spacing */
+.card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+ 

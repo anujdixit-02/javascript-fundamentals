@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Boolean</title>
+
+</head>
+<body>
+  <script>
+
+    if(true){
+      console.log('Hii How Are You!! ');
+    } else{
+      console.log('Hii..')
+    }
+
+    if(12>10){
+      console.log('true');
+    } else{
+      console.log('false');
+    }
+
+    /*check legal age for driving*/
+
+    const age = 20;
+
+    if(age>=18){
+      console.log('you can drive');
+    }
+    else{
+      console.log('youcan not drive');
+    }
+
+    /* if ladder (multiple if conditions) */
+
+    const age1 = 17;
+
+    if(age1>18){
+      console.log('You Can Drive');
+    } else if(age1<=17 && age1>=15){ 
+      console.log('Almost There');
+    } else{
+      console.log('You Can Not Drive')
+    }
+
+    /*Logical Operator AND(&&) OR(||) NOT(!)*/
+
+    if(12>5 && 13>6){
+      console.log('condition is true ');
+    }
+    else{
+      console.log('false condition');
+    }
+    /*OR operator(||)*/
+     console.log(true || false);
+     /*NOT Operator(!)*/
+      console.log(!false);
+
+      /*Shortcuts*/
+
+      /*Ternary Operator*/
+
+      const result = 0 ? 'truthy' : 'falsy' ;
+
+      /*Guard Operator*/
+
+       false && console.log('hello');
+
+       const message = 5 && 'hello';
+
+       console.log(message);
+
+       /*Default Operator*/ 
+
+       const currency = undefined || 'USD';
+
+     
+
+
+  </script>
+</body>
+</html> 
