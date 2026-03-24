@@ -1,0 +1,190 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>DOM Rock Paper Scissor</title>
+
+      <style>
+        body{
+          background-color: black;
+          color: white;
+          font-family: Arial;
+
+        }
+        .title{
+          font-size: 30px;
+          font-weight: bold;
+
+        }
+        .project-image{
+          height: 50px;
+        }
+        .js-image{
+          
+          
+          background-color: transparent;
+          border: 1px solid white;
+          height: 120px;
+          width: 120px;
+          border-radius: 60px;
+          margin: 10px;
+          cursor: pointer;
+          
+        }
+      </style>
+
+
+    </head>
+    <body>
+        <p class="title">Rock Paper Scissor </p>
+      <!--write javascript code to make the rock button working --> 
+    <button onclick="playGame('Rock');
+    " class="js-image"><img src="image-rock-paper-scissor/rock-emoji.png" class="project-image"  ></button>
+
+    <!--Repeat the process --> 
+    <button onclick="playGame('Paper');
+      
+    
+    " class="js-image"><img src="image-rock-paper-scissor/paper-emoji.png" class="project-image"  ></button>
+
+    <button onclick=" playGame('Scissor'); 
+    "
+    class="js-image"><img src="image-rock-paper-scissor/scissors-emoji.png" class="project-image" ></button>
+    
+    <p class="js-result"></p>
+    <p class ="js-score" ></p>
+     
+     
+
+     
+ 
+    <button onclick="
+    score.Wins = 0;
+    score.Losses = 0;
+    score.Ties = 0; 
+    document.querySelector('.js-score').innerHTML = `Wins ${score.Wins} . Losses ${score.Losses} . Ties ${score.Ties}   `;
+    
+    ">Reset Score</button>
+      
+      <script>
+        
+
+        const score = {
+          Wins : 0,
+          Losses : 0,
+          Ties : 0
+        };
+ 
+        function pickComputerMove() {
+          const randomNumber = Math.random();
+    /*computerMove and divide them into three part from 0 to 1{0 to 1/3, 1/3 to 2/3 and 2/3 to 1}*/
+    let computerMove = '';
+
+    if(randomNumber>=0 && randomNumber< 1/3){
+      computerMove = 'Rock';
+    }  else if(randomNumber>=1/3 && randomNumber< 2/3){
+      computerMove = 'Paper' ;
+    }  else if(randomNumber>=2/3 && randomNumber< 1){
+      computerMove = 'Scissor'; 
+    }
+
+    return computerMove;
+        }
+
+
+
+        function pickComputerMove1 (){
+
+          const randomNumber1 = Math.random();
+
+    let computerMove1 = '';
+
+    if(randomNumber1>=0 && randomNumber1< 1/3){
+      computerMove1 = 'Rock';
+    }  else if(randomNumber1>=1/3 && randomNumber1< 2/3){
+      computerMove1 = 'Paper' ;
+    }  else if(randomNumber1>=2/3 && randomNumber1< 1){
+      computerMove1 = 'Scissor'; 
+    }
+
+    return computerMove1;
+        }
+  
+        function pickComputerMove2(){
+            const randomNumber2 = Math.random();
+
+    let computerMove2 = '';
+
+    if(randomNumber2>=0 && randomNumber2< 1/3){
+      computerMove2 = 'Rock';
+    }  else if(randomNumber2>=1/3 && randomNumber2< 2/3){
+      computerMove2 = 'Paper' ;
+    }  else if(randomNumber2>=2/3 && randomNumber2< 1){
+      computerMove2 = 'Scissor'; 
+    }
+          return computerMove2;
+        }
+      /*function using parameters in rock,paper,scissor*/ 
+        function playGame(playerMoves){
+                
+
+          const computerMove2 = pickComputerMove2();
+          
+          let result2 ='';
+
+          if(playerMoves === 'Scissor' ){
+
+            if(computerMove2 === 'Rock'){
+            result2 = 'You Lose';
+          } else if (computerMove2 === 'Paper'){
+            result2 = 'You Win!';
+          } else if (computerMove2 === 'Scissor'){
+            result2 = 'Tie.';
+          }
+        }  else if(playerMoves === 'Paper' ){
+          if(computerMove2 === 'Rock'){
+            result2 = 'You Win!';
+          } else if (computerMove2 === 'Paper'){
+            result2 = 'Tie. ';
+          } else if (computerMove2 === 'Scissor'){
+            result2 = 'You Lose';
+
+        }
+      } else if(playerMoves === 'Rock'){
+         if(computerMove2 === 'Rock'){
+            result2 = 'Tie.';
+          } else if (computerMove2 === 'Paper'){
+            result2 = 'You Lose';
+          } else if (computerMove2 === 'Scissor'){
+            result2 = 'You Win!';
+
+      }
+    }
+
+        if(result2 === 'You Win!') {
+          score.Wins++;
+        } else if(result2 === 'You Lose'){
+          score.Losses++;
+        } else if(result2 === 'Tie.'){
+          score.Ties++;
+        } 
+document.querySelector('.js-score').innerHTML =
+`Wins ${score.Wins} . Losses ${score.Losses} . Ties ${score.Ties}`;
+ document.querySelector('.js-result').innerHTML = `You <img src="image-rock-paper-scissor/${playerMoves}-emoji.png" class ="project-image"  >  .<img src="image-rock-paper-scissor/${computerMove2}-emoji.png" class="project-image" > Computer 
+   ${result2} `;
+ 
+  
+
+                alert(`You Picked ${playerMoves}. Computer Picked ${computerMove2}. ${result2}
+Wins ${score.Wins} . Losses ${score.Losses} . Ties ${score.Ties}   `); 
+      } 
+document.querySelector('.js-score').innerHTML = `Wins ${score.Wins} . Losses ${score.Losses} . Ties ${score.Ties}   `;
+ document.querySelector('.js-result').innerHTML = `You Picked ${playerMoves}. Computer Picked ${computerMove2}. ${result2}`;
+
+ 
+        
+          
+  
+ 
+      </script>
+    </body>
+  </html>
