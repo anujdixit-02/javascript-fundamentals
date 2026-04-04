@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #0f2027;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background 0.5s ease-in-out;
+}
+
+.flex1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* BOX WIDTH FIX */
+.time, .centerbox {
+  width: 90%;
+  max-width: 350px;
+  margin: auto;
+}
+
+/* TIME BOX */
+.time {
+  border: 1.8px solid white;
+  border-radius: 18px 18px 0 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.centerbox1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tm {
+  font-size: 32px;
+  color: white;
+}
+
+.dt {
+  font-size: 20px;
+  color: white;
+}
+
+/* WEATHER BOX */
+.centerbox {
+  border: 1.8px solid white;
+  border-top: none;
+  border-radius: 0 0 18px 18px;
+  padding: 20px;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/* INPUT FIX */
+.upbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+/* BUTTON FIX */
+.items button {
+  padding: 6px 10px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.items button:hover {
+  background: white;
+  color: black;
+}
+
+/* ICON */
+.icolo {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESULT */
+.rslt {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.rslt img {
+  width: 100px;
+}
+
+.tmp {
+  font-size: 40px;
+}
+
+.enter {
+  margin-top: 20px;
+}

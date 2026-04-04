@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/ab2a8e179c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="flex1">
+
+    <!-- TIME BOX -->
+    <div class="time">
+      <div class="centerbox1">
+        <div class="left">
+          <span id="tm" class="tm">--</span>
+          <span class="dt" id="dte">--</span>
+        </div>
+        <div class="right">
+          <span id="city">--/</span><span id="country">IN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEATHER BOX -->
+    <div class="flex">
+      <div class="centerbox">
+        <div class="items">
+
+          <div class="upbox">
+            <input type="text" id="name" class="input" placeholder="Enter city">
+            <i id="locate" class="fa-solid fa-location-dot icolo"></i>
+            <button id="btn">Search</button>
+          </div>
+
+          <div class="rslt" id="result">
+            <h1 class="enter">Enter the name of a city 🙂</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
